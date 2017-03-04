@@ -1,3 +1,31 @@
 body {
-	background: red;
+	background: #999;
+	font-family: arial;
 }
+
+h1, h2 {
+	color: #555;
+}
+
+a {
+	color: green;
+}
+
+/* This is a class-attribute */
+.secondary {
+	background: none;
+	color: yellow;
+}
+
+p {
+	color:white;
+	background: #666;
+	/* No of Parameters: 1 = All, 2 = Top/Button + LeftRight, 4 = TRBL */
+	padding: 10px, 10px, 0px, 0px;
+}
+
+/* This is an id-attribute */
+#special {
+	background: red;	
+}
+
