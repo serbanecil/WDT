@@ -73,4 +73,75 @@ document.write("Opposite of 5 != 10: " + !(rand_num1 != rand_num2) +"<br />");
 
 var vehicles = new Array("car", "truck", "van");
 document.write("The second item in the array is: " + vehicles[1] +"<br />");
+for(i in vehicles) {
+	document.write("Value " + i + " in array: " + vehicles[i] + "<br />");
+}
+
+// Conditional operators
+var rand_var = (5 < 10) ? "5 is less than 10" : "5 is greater than 10";
+document.write("rand_var = " + rand_var + "<br />");
+if (5 > 10) {
+	document.write("5 > 10");
+} else if (5 == 10) {
+	document.write("5 = 10");
+} else {
+	document.write("5 < 10");
+}
+document.write("<br />");
+
+// case statement
+var state = "Pennsylvania";
+switch(state) {
+	case "California" :
+		document.write("California" + "<br />");
+		break;
+	case "Pennsylvania" :
+		document.write("Pennsylvania" + "<br />");
+		break;
+
+	default :
+		document.write("None" + "<br />");
+		break;
+}
+
+// loops
+var count = 1;
+while (count <= 10) {
+	if (count == 10) {
+		document.write("count is " + count + "<br />");
+	} else {
+		document.write("count is " + count + ", ");
+	}
+	++count;
+}
+
+count = 10;
+do {
+	if (count == 10) {
+		document.write("count " + count);
+	} else {
+		document.write(", count " + count);
+	}
+	--count;
+} while (count >= 1);
+document.write("<br />");
+
+for (var count = 1; count <= 10; ++count) {
+	if (count == 10) {
+		document.write("The count is " + count + "<br />");
+	} else {
+		document.write("The count is " + count + ", ");	
+	}
+}
+
+function addThese(numberOne, numberTwo) {
+	return numberOne + numberTwo;
+}
+
+document.write("5 + 10 = " + addThese(5, 10) + "<br />");
+
+
+
+
+
 
